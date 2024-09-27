@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/Pozadina\ za\ landing\ page\ \(6\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: sticky;
+    top: 0; right: 0; left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo img {
+    height: 5rem;
+    width: 6rem;
+    margin-left: 1rem;
+}
+
+.title {
+    font-size: large;
+    text-transform: uppercase;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 1rem;
+}
+
+.link i {
+    font-size: 25px;
+    color: black;
+}
+
+.link i:hover {
+    color: rgb(19, 90, 12);
+}
+
+.banner img {
+    width: 100%;
+    height: 450px;
+}
+
+.message {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.message .highlight {
+    font-weight: bold;
+    color: rgb(19, 90, 12);
+}
+
+.img-container {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image {
+    background-color: #ffffb5;
+background-image: linear-gradient(315deg, #ffffb5 0%, #247ba0 74%);
+    padding: 35px;
+    border-radius: 0.7rem;
+}
+
+.image:hover {
+    transform:scale(1.05);
+    transition: transform 0.1s ease;
+}
+
+.picture img {
+    width: 210px;
+    height: 250px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.text p{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+}
+
+.text p:hover {
+    color: rgb(244, 244, 244);
+}
+
+.container {
+    max-width: 100%;
+}
+
+footer {
+    background-color: white;
+    margin-top: 5rem;
+    padding: 50px 0;
+    border-top: 1px solid rgb(101, 101, 101);
+    
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a,
+.footer-column ul li p {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+
+}
+
+.footer-column ul li a:hover {
+    color: rgb(19, 90, 12);
+    font-weight: 400;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 3rem;
+        width: auto;
+        margin-left: 1rem;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .link i {
+        font-size: 1.5rem;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .message {
+        font-size: 1.8rem;
+    }
+
+    .img-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 200px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .picture img {
+        width: 100%;
+        height: auto;
+    } 
+
+    
+}
+
+@media screen and (max-width: 426px) {
+    .logo img {
+        height: 4rem;
+        width: auto;
+        margin-left: 0;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .link i {
+        font-size: 1.2rem;
+    }
+
+    .banner img {
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+    }
+
+    .message {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 16px;
+    }
+
+    .image {
+        width: 90%;
+        max-width: 600px;
+        margin-bottom: 20px;
+    }
+
+    footer .container .footer-column {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu .footer-columns {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .toggle-menu {
+        margin-bottom: 0.8rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+        text-decoration-color: black;
+    }
+
+    .menu.active li {
+        margin-bottom: 1rem;
+    }
+
+    .menu.active a:hover {
+        color: rgb(19, 90, 12);
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .banner img {
+        height: 140px;
+    }
+}
+
+@media screen  and (max-width: 320px){
+    .link i {
+        font-size: 1rem;
+    }
+
+    .banner img {
+        height: 120px;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+}
+
